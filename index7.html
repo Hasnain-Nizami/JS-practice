@@ -11,6 +11,7 @@
     <script>
 
 
+
 //     let city = prompt("where are you from")
 // if (city == "karachi") {
 //     alert("welcome to the city of light")
@@ -186,9 +187,10 @@
 //   alert("you dont put any special character")
 // }
 
+////////////////if else and else if statement///////////////////////
 
     
-
+//////////////question1///////////////////////////
 
 // let text = prompt(" write something here...");
 // if (text >= "A" && text <= "Z") {
@@ -201,6 +203,7 @@
 //   alert ("is not albhabetic charracter")
 // }
 
+///////////////question2////////////////////////
 
 //  var input1 = parseInt(prompt("Enter first number:"));
 // var input2 = parseInt(prompt("Enter second number:"));
@@ -212,6 +215,8 @@
 //     document.write(input1 + " chota hai is se " + input2);
 // }
 
+////////////////////question3////////////////////
+
 // var num =Number(prompt("write a number"))
 // if(num > 0){
 //   alert ("its positive")
@@ -222,10 +227,7 @@
 //   alert ("this negative")
 // }
 
-   
-
-
-
+///////////////////question4///////////////////
 
 
 // let alphabetic = prompt("Write  any singal lowercase alphabet");
@@ -235,8 +237,21 @@
 //     alert("false")
 // }
 
+///////////////question5//////////////////
 
+// var password = 123456
+// var userPas= +prompt("whats your password");
+// if(!userPas){
+// alert("please enter your password");
+// }else{
+//     if(userPas === password){
+//         alert("correct password");
+//     }else{
+//         alert("incorrect password");
+//     }
+// }
 
+///////////////question6//////////////
 
 // var hour = Number(prompt("type"));
 // if (hour >= 1 && hour <= 18){
@@ -248,29 +263,17 @@
 // }
 
 
-// var year =Number(prompt("give a year"))
-
-// if(year % 4 === 0){
-//   if(year % 100 === 0){
-//     if(year % 400 === 0){
-//       console.log(`ye tino se ho raha hai \nye leap year hai`)
-//     }else{
-//       console.log(`ye 4 se 100 se lekin 400 se nhi ho raha \nye leap year nhi hai`)
-//     }
-
-//   }else{
-//     console.log(`${year}ye 4 se horaha hai or 100 se nhi ho raha \nye leap year hai `)
-//   }
-
-// }else{
-//   console.log(`${year}ye nhi hua divide 4 se \nmtlab ye leap number nhi hai`)
-// }
-
-
-//////////////////chapter:Array///////////////////////
+/////////////question7////////////////
 
 
 
+
+
+
+//////////////////chapter13-15:Array///////////////////////
+
+
+////////////////question1////////////////
 // const arry=[]
 // console.log(arry)
 
@@ -294,7 +297,8 @@
 
 // var edu = ["SSC", "HSC", "BCS","BS", "BCOM", "MS", "M. Phil.", "PhD"]
 // document.write(`<h1>Qualification:</h1><ol><li>${edu[0]}</li><li>${edu[1]}</li><li>${edu[2]}</li><li>${edu[3]}</li><li>${edu[4]}</li><li>${edu[5]}</li><li>${edu[6]}</li></ol>`)
-    
+ 
+////////////////////question8////////////////////////
 
 // var stdNam = ["ali","fahad","shams"]
 // var stdScore =[320,350,390]
@@ -303,12 +307,237 @@
 // document.write(`score of ${stdNam[1]} is ${stdScore[1]}.percentage: ${stdScore[1] / totalmark * 100}%<br/>`)
 // document.write(`score of ${stdNam[2]} is ${stdScore[2]}.percentage: ${stdScore[2] / totalmark * 100}%<br/>`)
 
+/////////////////question9/////////////////////////
 
 // var color =["red","blue","yellow","green"]
 // document.write(`${color}`)
 // console.log(color.shift[0])
 
 
+// var color = ["red","blue","yellow","green"]
+// var whatColor = prompt("what color do you want at beginning")
+// color.unshift(whatColor)
+// document.write(`${color}<br/>`,)
+
+// var whatColor1=prompt("what color do you want to add in end")
+// color.push (whatColor1)
+// document.write(`${color}<br/>`)
+
+// color.unshift("golden","brown")
+// document.write(`${color}<br/>`)
+
+// color.shift()
+// document.write(`${color}<br/>`)
+
+// color.pop()
+// document.write(`${color}<br/>`)
+
+// var user1 = prompt("Which index do you you want to add color?")
+// var user2 = prompt("What color do yo want to add")
+// color.splice(user1,0,user2)
+// document.write(`${color}<br/>`)
+
+// var user3 = prompt("which index you want to delete color(s)")
+// var user4 = prompt("how many color you want to delete")
+// color.splice(user3,user4)
+// document.write(`${color}<br/>`)
+
+///////////////question11//////////////////////
+
+// var cityName = ["karachi","lahore","islamabad","muree","sialkot"]
+// document.write(`<h1>Cities list</h1><p>${cityName}</p>`)
+// var selectname = cityName.slice(2,4)
+// document.write(`<h1>selected Cities list</h1>${selectname}`)
+
+//////////////question12/////////////////////////
+
+// var arr = ["this","is","my","cat"]
+// console.log(arr)
+
+// console.log(arr.join(" "))
+
+//////////////question13///////////////////
+
+// var fruits = [];
+
+// fruits.push("apple")
+// fruits.push("banana")
+// fruits.push("mango")
+// fruits.push("cherry")
+// console.log(fruits.shift())
+// console.log(fruits.shift())
+// console.log(fruits.shift())
+// console.log(fruits.shift())
+
+/////////////question14//////////////////////
+
+
+// var accessories = ["keyboard","mouse","printer","monitor"]
+// document.write(`<h3>Devices:</h3>${accessories}`)
+// for(var i = 0; i < accessories.length; i++)[
+// document.write(`<h3>Out:</h3>${accessories[i]}`)
+// ]
+
+////////////reverse////////////////////////
+
+
+// var accessories1 = ["keyboard","mouse","printer","monitor"]
+// document.write(`<h3>Devices:</h3>${accessories1}`)
+// for(var i = accessories1.length-1; i >= 0;i--){
+//     document.write(`<h3>out:</h3>${accessories1[i]}`)
+
+// }
+//////////////question15///////////////////////////////
+
+
+// var mobile = ["sumsung","infinix","motorola","nokia","sony","haier"]
+// document.write(`<select><option disabled selected>select brand</option><option>${mobile[0]}</option><option>${mobile[1]}</option><option>${mobile[2]}</option><option>${mobile[3]}</option><option>${mobile[4]}</option><option>${mobile[5]}</option></select>`)
+
+
+
+      //////////////////chapter13-15:Array///////////////////////
+
+// function displayDate() {
+//   document.write(Date())
+  
+// }
+// document.write(`<button onclick="displayDate()">click me</button>`)
+
+///////////Question2//////////////////
+
+// function fullname(firstname,lastname){
+//     var name = firstname + lastname
+//     console.log(name)
+
+// }
+// fullname("ali","ahmed")
+// fullname("muhammad","hasnain")
+
+///////////Question3//////////////
+
+// function adding (a,b){
+//     return a+b
+// }
+// var c = adding(10,30)
+// console.log(c)
+
+//////////Question4///////////
+ 
+// function calculator(num1,num2,operator){
+//     if(operator == "+"){
+//         return num1+num2
+//     }else if(operator == "-"){
+//         return num1-num2
+//     }else if(operator == "/"){
+//         return num1/num2
+//     }else if(operator == "*"){
+//         return num1*num2
+//     }else if(operator == "%"){
+//         return num1%num2
+//     }else{
+//         alert("non of the value")
+//     }
+
+// }
+// var num1 = +prompt("first number")
+// var operator = prompt("whats operator")
+// var num2 = +prompt("lastnumber")
+// console.log(calculator(num1,num2,operator))
+
+///////////////Question5///////////
+
+// function square(x){
+//  return x ** 2
+// }
+// var result = square(5)
+// console.log(result)
+
+////////////Qusetion6/////////////
+
+
+// const factorial = function(n){
+//     return n*(n-1)
+// }
+// alert(factorial(100))
+
+// arrow function 
+//  const factorial1 = (n)=>{
+//     return n*(n-1)
+//  } 
+// alert(factorial1(100))
+
+/////////////Question7////////////
+// function countNumbers(start, end) {
+//   if (start > end) {
+//     return;
+//   }
+//   document.write(start + "<br>");
+//   countNumbers(start + 1, end);
+// }
+// countNumbers(1, 10);
+// countNumbers(1, 20);
+
+
+/////////////question8/////////////
+
+// function calculateHypotenuse(base,perpendicular) {
+//     function calculateSquare(x){
+//         return x ** 2
+//     }
+// let base_squared = calculateSquare(base);
+// let perpendicular_squared = calculateSquare(perpendicular);
+// let hypotenuse_squared = base_squared + perpendicular_squared;
+// let hypotenuse = Math.sqrt(hypotenuse_squared);
+// return hypotenuse;
+// }
+// let hypotenuse = calculateHypotenuse(3, 4);
+// console.log(hypotenuse);
+
+/////////////quseton9///////////////
+
+// function calculatorArea(width,height){
+//     let area = width * height;
+//     return area
+// }
+
+// function calculatorArea2(width,height){
+//     let area = width * height;
+//     return area
+// }
+// let w = 20
+// let h = 10
+// let area2 = calculatorArea2(w,h)
+
+// let area1 = calculatorArea(5,10)
+// console.log(area1)
+// console.log(area2)
+
+/////////////qustion10/////////////
+
+// function isPalindrome(str) {
+//   str = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+//   let reversedStr = str.split('').reverse().join('');
+//   return str === reversedStr;
+// }
+
+
+// let str = 'Madam';
+// if (isPalindrome(str)) {
+//   console.log(`${str} is a palindrome`);
+// } else {
+//   console.log(`${str} is not a palindrome`);
+// }
+
+////////////question11/////////////
+
+// const parameter = function(firstletter){
+//     return firstletter.toString()
+// }
+
+////////////question12///////////
+
+
+    
 
 
 
@@ -316,8 +545,20 @@
 
 
 
+/////////////question9//////////////
 
+// const calculateTheAreaOfCircle = function (width,height){
+//     return width * height
+// }
+// var width = +prompt("Enter the width")
+// var height = +prompt("Enter the height")
+// console.log(calculateTheAreaOfCircle(width,height))
 
     </script>
+
+
+
 </body>
+
+ 
 </html>
